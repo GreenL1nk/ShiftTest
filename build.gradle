@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'greenlink'
+version = ''
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation("org.jetbrains:annotations:24.0.0")
+
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'greenlink.Main'
+        )
+    }
+    setArchiveBaseName('util')
+}
